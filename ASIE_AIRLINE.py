@@ -7,8 +7,8 @@ import streamlit as st
 
 from os import sep
 st.title(" Indian Domestic Airline Data Analysis")
-path=("Indian_Domestic_Airline.csv", encoding='utf-8')
-df=pd.read_csv(path)
+path=("Indian_Domestic_Airline.csv")
+df=pd.read_csv(path, encoding="utf-8")
 #df.head()
 st.dataframe(df)
 
